@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Area" representedClassName=".Area" syncable="YES">
+        <attribute name="idArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreArea" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Asignatura" representedClassName=".Asignatura" syncable="YES">
+        <attribute name="idAsignatura" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreAsignatura" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Bloque" representedClassName=".Bloque" syncable="YES">
+        <attribute name="idBloque" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idSede" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreBloque" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Grupo" representedClassName=".Grupo" syncable="YES">
+        <attribute name="idGrupo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreGrupo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pensum" representedClassName=".Pensum" syncable="YES">
+        <attribute name="idArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idAsignatura" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPensum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPrograma" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Planilla" representedClassName=".Planilla" syncable="YES">
+        <attribute name="cantidad" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="idArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idAsignatura" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idGrupo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPlanilla" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPrograma" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Profesor" representedClassName=".Profesor" syncable="YES">
+        <attribute name="idProfesor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreProfesor" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Programa" representedClassName=".Programa" syncable="YES">
+        <attribute name="idArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPrograma" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombrePrograma" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Recurso" representedClassName=".Recurso" syncable="YES">
+        <attribute name="capacidad" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="idRecurso" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreRecurso" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Reserva" representedClassName=".Reserva" syncable="YES">
+        <attribute name="fechaFinal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fechaInicial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="horaFinal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="horaInicial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idAsignatura" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idBloque" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idGrupo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPrograma" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idRecurso" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idReserva" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idSede" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idTipoActividad" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Sede" representedClassName=".Sede" syncable="YES">
+        <attribute name="idSede" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreSede" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TipoActividad" representedClassName=".TipoActividad" syncable="YES">
+        <attribute name="idTipoActividad" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreTipoAct" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Area" positionX="27" positionY="99" width="128" height="75"/>
+        <element name="Asignatura" positionX="54" positionY="126" width="128" height="75"/>
+        <element name="Bloque" positionX="9" positionY="81" width="128" height="90"/>
+        <element name="Grupo" positionX="18" positionY="90" width="128" height="75"/>
+        <element name="Pensum" positionX="18" positionY="162" width="128" height="105"/>
+        <element name="Planilla" positionX="63" positionY="207" width="128" height="135"/>
+        <element name="Profesor" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="Programa" positionX="27" positionY="99" width="128" height="90"/>
+        <element name="Recurso" positionX="36" positionY="108" width="128" height="90"/>
+        <element name="Reserva" positionX="54" positionY="126" width="128" height="240"/>
+        <element name="Sede" positionX="0" positionY="63" width="128" height="75"/>
+        <element name="TipoActividad" positionX="45" positionY="117" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE01BE8D1C56AF0600680471 /* ConsultaReservaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01BE8C1C56AF0600680471 /* ConsultaReservaViewController.swift */; };
+		CE01BE8F1C5724DA00680471 /* ConsultaReservaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01BE8E1C5724DA00680471 /* ConsultaReservaTableViewController.swift */; };
+		CE7EC6AD1C5E64ED00FB404D /* EditarReservaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EC6AC1C5E64ED00FB404D /* EditarReservaViewController.swift */; };
+		CE7FBCB71C513DA300828622 /* PensumDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FBCB61C513DA300828622 /* PensumDO.swift */; };
+		CE9727DB1C529AFD009F0952 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9727DA1C529AFD009F0952 /* Util.swift */; };
+		CE9C11B21C72A71F0062C111 /* ConsultaReservaEstudianteDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C11B11C72A71F0062C111 /* ConsultaReservaEstudianteDO.swift */; };
+		CE9D65671C48A0A8000162E5 /* AppiReserva.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65651C48A0A8000162E5 /* AppiReserva.xcdatamodeld */; };
+		CE9D657D1C48A6FB000162E5 /* Bloque+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65681C48A6FB000162E5 /* Bloque+CoreDataProperties.swift */; };
+		CE9D657E1C48A6FB000162E5 /* Bloque.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65691C48A6FB000162E5 /* Bloque.swift */; };
+		CE9D657F1C48A6FB000162E5 /* Planilla+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D656A1C48A6FB000162E5 /* Planilla+CoreDataProperties.swift */; };
+		CE9D65801C48A6FB000162E5 /* Planilla.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D656B1C48A6FB000162E5 /* Planilla.swift */; };
+		CE9D65811C48A6FB000162E5 /* Programa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D656C1C48A6FB000162E5 /* Programa+CoreDataProperties.swift */; };
+		CE9D65821C48A6FB000162E5 /* Programa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D656D1C48A6FB000162E5 /* Programa.swift */; };
+		CE9D65841C48A6FB000162E5 /* Recurso+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D656F1C48A6FB000162E5 /* Recurso+CoreDataProperties.swift */; };
+		CE9D65851C48A6FB000162E5 /* Recurso.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65701C48A6FB000162E5 /* Recurso.swift */; };
+		CE9D65861C48A6FB000162E5 /* Profesor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65711C48A6FB000162E5 /* Profesor+CoreDataProperties.swift */; };
+		CE9D65871C48A6FB000162E5 /* Profesor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65721C48A6FB000162E5 /* Profesor.swift */; };
+		CE9D65881C48A6FB000162E5 /* Grupo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65731C48A6FB000162E5 /* Grupo+CoreDataProperties.swift */; };
+		CE9D65891C48A6FB000162E5 /* Grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65741C48A6FB000162E5 /* Grupo.swift */; };
+		CE9D658A1C48A6FB000162E5 /* Asignatura+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65751C48A6FB000162E5 /* Asignatura+CoreDataProperties.swift */; };
+		CE9D658B1C48A6FB000162E5 /* Asignatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65761C48A6FB000162E5 /* Asignatura.swift */; };
+		CE9D658C1C48A6FB000162E5 /* TipoActividad+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65771C48A6FB000162E5 /* TipoActividad+CoreDataProperties.swift */; };
+		CE9D658D1C48A6FB000162E5 /* TipoActividad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65781C48A6FB000162E5 /* TipoActividad.swift */; };
+		CE9D658E1C48A6FB000162E5 /* Reserva+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65791C48A6FB000162E5 /* Reserva+CoreDataProperties.swift */; };
+		CE9D658F1C48A6FB000162E5 /* Reserva.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D657A1C48A6FB000162E5 /* Reserva.swift */; };
+		CE9D65901C48A6FB000162E5 /* Area+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D657B1C48A6FB000162E5 /* Area+CoreDataProperties.swift */; };
+		CE9D65911C48A6FB000162E5 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D657C1C48A6FB000162E5 /* Area.swift */; };
+		CE9D65941C48A849000162E5 /* JSONParserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D65931C48A849000162E5 /* JSONParserViewController.swift */; };
+		CEA368281C4E727D00EBA761 /* ProfesorDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA368271C4E727D00EBA761 /* ProfesorDO.swift */; };
+		CEA3682A1C4E8A7A00EBA761 /* SedeDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA368291C4E8A7A00EBA761 /* SedeDO.swift */; };
+		CEA3682C1C4E8BD300EBA761 /* BloqueDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3682B1C4E8BD300EBA761 /* BloqueDO.swift */; };
+		CEA3682E1C4E8CCF00EBA761 /* AreaDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3682D1C4E8CCF00EBA761 /* AreaDO.swift */; };
+		CEA368301C4E8D9A00EBA761 /* ProgramaDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3682F1C4E8D9A00EBA761 /* ProgramaDO.swift */; };
+		CEA368321C4E8ED400EBA761 /* AsignaturaDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA368311C4E8ED400EBA761 /* AsignaturaDO.swift */; };
+		CEA368341C4E903200EBA761 /* GrupoDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA368331C4E903200EBA761 /* GrupoDO.swift */; };
+		CEA368361C4E90CC00EBA761 /* TipoActividadDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA368351C4E90CC00EBA761 /* TipoActividadDO.swift */; };
+		CEA368381C4E91D100EBA761 /* RecursoDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA368371C4E91D100EBA761 /* RecursoDO.swift */; };
+		CEA3683A1C4E9D3F00EBA761 /* PlanillaDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA368391C4E9D3F00EBA761 /* PlanillaDO.swift */; };
+		CEA3683C1C4EA33400EBA761 /* ReservaDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3683B1C4EA33400EBA761 /* ReservaDO.swift */; };
+		CEAD7DA11C331629009BD8B4 /* ListadoReservaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD7DA01C331629009BD8B4 /* ListadoReservaTableViewController.swift */; };
+		CEB131641C57B28C00B56603 /* ConsultaReservaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB131631C57B28C00B56603 /* ConsultaReservaTableViewCell.swift */; };
+		CEB131661C57C24400B56603 /* ConsultaReservaDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB131651C57C24400B56603 /* ConsultaReservaDO.swift */; };
+		CEB61DBB1C52E9810060F58B /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB61DBA1C52E9810060F58B /* MessageHandler.swift */; };
+		CEB88E7C1C31DE140040D278 /* ListadoReservaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB88E7B1C31DE140040D278 /* ListadoReservaTableViewCell.swift */; };
+		CEC9F14C1C5FB83F006D4AAC /* Pensum+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9F14A1C5FB83F006D4AAC /* Pensum+CoreDataProperties.swift */; };
+		CEC9F14D1C5FB83F006D4AAC /* Pensum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9F14B1C5FB83F006D4AAC /* Pensum.swift */; };
+		CEDA67361C0F318700A90EFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA67351C0F318700A90EFC /* AppDelegate.swift */; };
+		CEDA673D1C0F318700A90EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDA673C1C0F318700A90EFC /* Assets.xcassets */; };
+		CEDA67401C0F318700A90EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDA673E1C0F318700A90EFC /* LaunchScreen.storyboard */; };
+		CEDA674B1C0F318800A90EFC /* AppiReservaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA674A1C0F318800A90EFC /* AppiReservaTests.swift */; };
+		CEDA67561C0F318800A90EFC /* AppiReservaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA67551C0F318800A90EFC /* AppiReservaUITests.swift */; };
+		CEDA67641C0F37B400A90EFC /* LoguinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA67631C0F37B400A90EFC /* LoguinViewController.swift */; };
+		CEDA67661C0F37D800A90EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDA67651C0F37D800A90EFC /* Main.storyboard */; };
+		CEDA67861C0F86A700A90EFC /* ReservaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA67851C0F86A700A90EFC /* ReservaViewController.swift */; };
+		CEFE4C7E1C48ACA2006D5150 /* Sede+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE4C7C1C48ACA2006D5150 /* Sede+CoreDataProperties.swift */; };
+		CEFE4C7F1C48ACA2006D5150 /* Sede.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE4C7D1C48ACA2006D5150 /* Sede.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEDA67471C0F318800A90EFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDA672A1C0F318700A90EFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDA67311C0F318700A90EFC;
+			remoteInfo = AppiReserva;
+		};
+		CEDA67521C0F318800A90EFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDA672A1C0F318700A90EFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDA67311C0F318700A90EFC;
+			remoteInfo = AppiReserva;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE01BE8C1C56AF0600680471 /* ConsultaReservaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaReservaViewController.swift; sourceTree = "<group>"; };
+		CE01BE8E1C5724DA00680471 /* ConsultaReservaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaReservaTableViewController.swift; sourceTree = "<group>"; };
+		CE7EC6AC1C5E64ED00FB404D /* EditarReservaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarReservaViewController.swift; sourceTree = "<group>"; };
+		CE7FBCB61C513DA300828622 /* PensumDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PensumDO.swift; sourceTree = "<group>"; };
+		CE9727DA1C529AFD009F0952 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		CE9C11B11C72A71F0062C111 /* ConsultaReservaEstudianteDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaReservaEstudianteDO.swift; sourceTree = "<group>"; };
+		CE9D65661C48A0A8000162E5 /* AppiReserva.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppiReserva.xcdatamodel; sourceTree = "<group>"; };
+		CE9D65681C48A6FB000162E5 /* Bloque+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bloque+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D65691C48A6FB000162E5 /* Bloque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bloque.swift; sourceTree = "<group>"; };
+		CE9D656A1C48A6FB000162E5 /* Planilla+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Planilla+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D656B1C48A6FB000162E5 /* Planilla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planilla.swift; sourceTree = "<group>"; };
+		CE9D656C1C48A6FB000162E5 /* Programa+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Programa+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D656D1C48A6FB000162E5 /* Programa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Programa.swift; sourceTree = "<group>"; };
+		CE9D656F1C48A6FB000162E5 /* Recurso+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recurso+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D65701C48A6FB000162E5 /* Recurso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recurso.swift; sourceTree = "<group>"; };
+		CE9D65711C48A6FB000162E5 /* Profesor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Profesor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D65721C48A6FB000162E5 /* Profesor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profesor.swift; sourceTree = "<group>"; };
+		CE9D65731C48A6FB000162E5 /* Grupo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Grupo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D65741C48A6FB000162E5 /* Grupo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grupo.swift; sourceTree = "<group>"; };
+		CE9D65751C48A6FB000162E5 /* Asignatura+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asignatura+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D65761C48A6FB000162E5 /* Asignatura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asignatura.swift; sourceTree = "<group>"; };
+		CE9D65771C48A6FB000162E5 /* TipoActividad+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TipoActividad+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D65781C48A6FB000162E5 /* TipoActividad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoActividad.swift; sourceTree = "<group>"; };
+		CE9D65791C48A6FB000162E5 /* Reserva+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reserva+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D657A1C48A6FB000162E5 /* Reserva.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reserva.swift; sourceTree = "<group>"; };
+		CE9D657B1C48A6FB000162E5 /* Area+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE9D657C1C48A6FB000162E5 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		CE9D65931C48A849000162E5 /* JSONParserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParserViewController.swift; sourceTree = "<group>"; };
+		CEA368271C4E727D00EBA761 /* ProfesorDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfesorDO.swift; sourceTree = "<group>"; };
+		CEA368291C4E8A7A00EBA761 /* SedeDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SedeDO.swift; sourceTree = "<group>"; };
+		CEA3682B1C4E8BD300EBA761 /* BloqueDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloqueDO.swift; sourceTree = "<group>"; };
+		CEA3682D1C4E8CCF00EBA761 /* AreaDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaDO.swift; sourceTree = "<group>"; };
+		CEA3682F1C4E8D9A00EBA761 /* ProgramaDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaDO.swift; sourceTree = "<group>"; };
+		CEA368311C4E8ED400EBA761 /* AsignaturaDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsignaturaDO.swift; sourceTree = "<group>"; };
+		CEA368331C4E903200EBA761 /* GrupoDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoDO.swift; sourceTree = "<group>"; };
+		CEA368351C4E90CC00EBA761 /* TipoActividadDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoActividadDO.swift; sourceTree = "<group>"; };
+		CEA368371C4E91D100EBA761 /* RecursoDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursoDO.swift; sourceTree = "<group>"; };
+		CEA368391C4E9D3F00EBA761 /* PlanillaDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanillaDO.swift; sourceTree = "<group>"; };
+		CEA3683B1C4EA33400EBA761 /* ReservaDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservaDO.swift; sourceTree = "<group>"; };
+		CEAD7DA01C331629009BD8B4 /* ListadoReservaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListadoReservaTableViewController.swift; sourceTree = "<group>"; };
+		CEB131631C57B28C00B56603 /* ConsultaReservaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaReservaTableViewCell.swift; sourceTree = "<group>"; };
+		CEB131651C57C24400B56603 /* ConsultaReservaDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaReservaDO.swift; sourceTree = "<group>"; };
+		CEB61DBA1C52E9810060F58B /* MessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageHandler.swift; sourceTree = "<group>"; };
+		CEB88E7B1C31DE140040D278 /* ListadoReservaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListadoReservaTableViewCell.swift; sourceTree = "<group>"; };
+		CEC9F14A1C5FB83F006D4AAC /* Pensum+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pensum+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CEC9F14B1C5FB83F006D4AAC /* Pensum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pensum.swift; sourceTree = "<group>"; };
+		CEDA67321C0F318700A90EFC /* AppiReserva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppiReserva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDA67351C0F318700A90EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEDA673C1C0F318700A90EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEDA673F1C0F318700A90EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEDA67411C0F318700A90EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDA67461C0F318800A90EFC /* AppiReservaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppiReservaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDA674A1C0F318800A90EFC /* AppiReservaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiReservaTests.swift; sourceTree = "<group>"; };
+		CEDA674C1C0F318800A90EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDA67511C0F318800A90EFC /* AppiReservaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppiReservaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDA67551C0F318800A90EFC /* AppiReservaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiReservaUITests.swift; sourceTree = "<group>"; };
+		CEDA67571C0F318800A90EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDA67631C0F37B400A90EFC /* LoguinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoguinViewController.swift; sourceTree = "<group>"; };
+		CEDA67651C0F37D800A90EFC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CEDA67851C0F86A700A90EFC /* ReservaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservaViewController.swift; sourceTree = "<group>"; };
+		CEFE4C7C1C48ACA2006D5150 /* Sede+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sede+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CEFE4C7D1C48ACA2006D5150 /* Sede.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sede.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEDA672F1C0F318700A90EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDA67431C0F318800A90EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDA674E1C0F318800A90EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE464A421C666DFA00ED0E11 /* AppiReservaNSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D65651C48A0A8000162E5 /* AppiReserva.xcdatamodeld */,
+				CEC9F14A1C5FB83F006D4AAC /* Pensum+CoreDataProperties.swift */,
+				CE9D65681C48A6FB000162E5 /* Bloque+CoreDataProperties.swift */,
+				CE9D65691C48A6FB000162E5 /* Bloque.swift */,
+				CE9D656A1C48A6FB000162E5 /* Planilla+CoreDataProperties.swift */,
+				CE9D656B1C48A6FB000162E5 /* Planilla.swift */,
+				CE9D656C1C48A6FB000162E5 /* Programa+CoreDataProperties.swift */,
+				CE9D656D1C48A6FB000162E5 /* Programa.swift */,
+				CE9D656F1C48A6FB000162E5 /* Recurso+CoreDataProperties.swift */,
+				CE9D65701C48A6FB000162E5 /* Recurso.swift */,
+				CE9D65711C48A6FB000162E5 /* Profesor+CoreDataProperties.swift */,
+				CE9D65721C48A6FB000162E5 /* Profesor.swift */,
+				CE9D65731C48A6FB000162E5 /* Grupo+CoreDataProperties.swift */,
+				CE9D65741C48A6FB000162E5 /* Grupo.swift */,
+				CE9D65751C48A6FB000162E5 /* Asignatura+CoreDataProperties.swift */,
+				CE9D65761C48A6FB000162E5 /* Asignatura.swift */,
+				CE9D65771C48A6FB000162E5 /* TipoActividad+CoreDataProperties.swift */,
+				CE9D65781C48A6FB000162E5 /* TipoActividad.swift */,
+				CE9D65791C48A6FB000162E5 /* Reserva+CoreDataProperties.swift */,
+				CE9D657A1C48A6FB000162E5 /* Reserva.swift */,
+				CE9D657B1C48A6FB000162E5 /* Area+CoreDataProperties.swift */,
+				CE9D657C1C48A6FB000162E5 /* Area.swift */,
+				CEFE4C7C1C48ACA2006D5150 /* Sede+CoreDataProperties.swift */,
+				CEFE4C7D1C48ACA2006D5150 /* Sede.swift */,
+				CEC9F14B1C5FB83F006D4AAC /* Pensum.swift */,
+			);
+			name = AppiReservaNSManagedObject;
+			sourceTree = "<group>";
+		};
+		CE9D65921C48A726000162E5 /* AppiReservaHelper */ = {
+			isa = PBXGroup;
+			children = (
+				CE9727DA1C529AFD009F0952 /* Util.swift */,
+				CEB61DBA1C52E9810060F58B /* MessageHandler.swift */,
+			);
+			name = AppiReservaHelper;
+			sourceTree = "<group>";
+		};
+		CEAD7DA41C335964009BD8B4 /* AppiReservaModelo */ = {
+			isa = PBXGroup;
+			children = (
+				CE9D65931C48A849000162E5 /* JSONParserViewController.swift */,
+				CEA368271C4E727D00EBA761 /* ProfesorDO.swift */,
+				CEA368291C4E8A7A00EBA761 /* SedeDO.swift */,
+				CEA3682B1C4E8BD300EBA761 /* BloqueDO.swift */,
+				CEA3682D1C4E8CCF00EBA761 /* AreaDO.swift */,
+				CEA3682F1C4E8D9A00EBA761 /* ProgramaDO.swift */,
+				CEA368311C4E8ED400EBA761 /* AsignaturaDO.swift */,
+				CEA368331C4E903200EBA761 /* GrupoDO.swift */,
+				CEA368351C4E90CC00EBA761 /* TipoActividadDO.swift */,
+				CEA368371C4E91D100EBA761 /* RecursoDO.swift */,
+				CEA368391C4E9D3F00EBA761 /* PlanillaDO.swift */,
+				CEA3683B1C4EA33400EBA761 /* ReservaDO.swift */,
+				CE7FBCB61C513DA300828622 /* PensumDO.swift */,
+				CEB131651C57C24400B56603 /* ConsultaReservaDO.swift */,
+				CE9C11B11C72A71F0062C111 /* ConsultaReservaEstudianteDO.swift */,
+			);
+			name = AppiReservaModelo;
+			sourceTree = "<group>";
+		};
+		CEDA67291C0F318700A90EFC = {
+			isa = PBXGroup;
+			children = (
+				CE464A421C666DFA00ED0E11 /* AppiReservaNSManagedObject */,
+				CE9D65921C48A726000162E5 /* AppiReservaHelper */,
+				CEAD7DA41C335964009BD8B4 /* AppiReservaModelo */,
+				CEDA67341C0F318700A90EFC /* AppiReserva */,
+				CEDA67491C0F318800A90EFC /* AppiReservaTests */,
+				CEDA67541C0F318800A90EFC /* AppiReservaUITests */,
+				CEDA67331C0F318700A90EFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEDA67331C0F318700A90EFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA67321C0F318700A90EFC /* AppiReserva.app */,
+				CEDA67461C0F318800A90EFC /* AppiReservaTests.xctest */,
+				CEDA67511C0F318800A90EFC /* AppiReservaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDA67341C0F318700A90EFC /* AppiReserva */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA67351C0F318700A90EFC /* AppDelegate.swift */,
+				CEDA67631C0F37B400A90EFC /* LoguinViewController.swift */,
+				CEDA67851C0F86A700A90EFC /* ReservaViewController.swift */,
+				CEAD7DA01C331629009BD8B4 /* ListadoReservaTableViewController.swift */,
+				CEB88E7B1C31DE140040D278 /* ListadoReservaTableViewCell.swift */,
+				CE01BE8C1C56AF0600680471 /* ConsultaReservaViewController.swift */,
+				CEB131631C57B28C00B56603 /* ConsultaReservaTableViewCell.swift */,
+				CE01BE8E1C5724DA00680471 /* ConsultaReservaTableViewController.swift */,
+				CE7EC6AC1C5E64ED00FB404D /* EditarReservaViewController.swift */,
+				CEDA673C1C0F318700A90EFC /* Assets.xcassets */,
+				CEDA673E1C0F318700A90EFC /* LaunchScreen.storyboard */,
+				CEDA67651C0F37D800A90EFC /* Main.storyboard */,
+				CEDA67411C0F318700A90EFC /* Info.plist */,
+			);
+			path = AppiReserva;
+			sourceTree = "<group>";
+		};
+		CEDA67491C0F318800A90EFC /* AppiReservaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA674A1C0F318800A90EFC /* AppiReservaTests.swift */,
+				CEDA674C1C0F318800A90EFC /* Info.plist */,
+			);
+			path = AppiReservaTests;
+			sourceTree = "<group>";
+		};
+		CEDA67541C0F318800A90EFC /* AppiReservaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA67551C0F318800A90EFC /* AppiReservaUITests.swift */,
+				CEDA67571C0F318800A90EFC /* Info.plist */,
+			);
+			path = AppiReservaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEDA67311C0F318700A90EFC /* AppiReserva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDA675A1C0F318800A90EFC /* Build configuration list for PBXNativeTarget "AppiReserva" */;
+			buildPhases = (
+				CEDA672E1C0F318700A90EFC /* Sources */,
+				CEDA672F1C0F318700A90EFC /* Frameworks */,
+				CEDA67301C0F318700A90EFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppiReserva;
+			productName = AppiReserva;
+			productReference = CEDA67321C0F318700A90EFC /* AppiReserva.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEDA67451C0F318800A90EFC /* AppiReservaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDA675D1C0F318800A90EFC /* Build configuration list for PBXNativeTarget "AppiReservaTests" */;
+			buildPhases = (
+				CEDA67421C0F318800A90EFC /* Sources */,
+				CEDA67431C0F318800A90EFC /* Frameworks */,
+				CEDA67441C0F318800A90EFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDA67481C0F318800A90EFC /* PBXTargetDependency */,
+			);
+			name = AppiReservaTests;
+			productName = AppiReservaTests;
+			productReference = CEDA67461C0F318800A90EFC /* AppiReservaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEDA67501C0F318800A90EFC /* AppiReservaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDA67601C0F318800A90EFC /* Build configuration list for PBXNativeTarget "AppiReservaUITests" */;
+			buildPhases = (
+				CEDA674D1C0F318800A90EFC /* Sources */,
+				CEDA674E1C0F318800A90EFC /* Frameworks */,
+				CEDA674F1C0F318800A90EFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDA67531C0F318800A90EFC /* PBXTargetDependency */,
+			);
+			name = AppiReservaUITests;
+			productName = AppiReservaUITests;
+			productReference = CEDA67511C0F318800A90EFC /* AppiReservaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEDA672A1C0F318700A90EFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					"#1",
+					"#2",
+					1,
+				);
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Olonte Apps";
+				TargetAttributes = {
+					CEDA67311C0F318700A90EFC = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 8FWMWJXGEF;
+						LastSwiftMigration = 0800;
+					};
+					CEDA67451C0F318800A90EFC = {
+						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = CEDA67311C0F318700A90EFC;
+					};
+					CEDA67501C0F318800A90EFC = {
+						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = CEDA67311C0F318700A90EFC;
+					};
+				};
+			};
+			buildConfigurationList = CEDA672D1C0F318700A90EFC /* Build configuration list for PBXProject "AppiReserva" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEDA67291C0F318700A90EFC;
+			productRefGroup = CEDA67331C0F318700A90EFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEDA67311C0F318700A90EFC /* AppiReserva */,
+				CEDA67451C0F318800A90EFC /* AppiReservaTests */,
+				CEDA67501C0F318800A90EFC /* AppiReservaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEDA67301C0F318700A90EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDA67661C0F37D800A90EFC /* Main.storyboard in Resources */,
+				CEDA67401C0F318700A90EFC /* LaunchScreen.storyboard in Resources */,
+				CEDA673D1C0F318700A90EFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDA67441C0F318800A90EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDA674F1C0F318800A90EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDA672E1C0F318700A90EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9D65881C48A6FB000162E5 /* Grupo+CoreDataProperties.swift in Sources */,
+				CE9D658B1C48A6FB000162E5 /* Asignatura.swift in Sources */,
+				CE7EC6AD1C5E64ED00FB404D /* EditarReservaViewController.swift in Sources */,
+				CEB61DBB1C52E9810060F58B /* MessageHandler.swift in Sources */,
+				CEB88E7C1C31DE140040D278 /* ListadoReservaTableViewCell.swift in Sources */,
+				CE9D65841C48A6FB000162E5 /* Recurso+CoreDataProperties.swift in Sources */,
+				CEA368301C4E8D9A00EBA761 /* ProgramaDO.swift in Sources */,
+				CE01BE8D1C56AF0600680471 /* ConsultaReservaViewController.swift in Sources */,
+				CE9D65671C48A0A8000162E5 /* AppiReserva.xcdatamodeld in Sources */,
+				CE9D658D1C48A6FB000162E5 /* TipoActividad.swift in Sources */,
+				CEA3683C1C4EA33400EBA761 /* ReservaDO.swift in Sources */,
+				CEA368281C4E727D00EBA761 /* ProfesorDO.swift in Sources */,
+				CEB131641C57B28C00B56603 /* ConsultaReservaTableViewCell.swift in Sources */,
+				CE9D658F1C48A6FB000162E5 /* Reserva.swift in Sources */,
+				CEFE4C7F1C48ACA2006D5150 /* Sede.swift in Sources */,
+				CEA3683A1C4E9D3F00EBA761 /* PlanillaDO.swift in Sources */,
+				CEFE4C7E1C48ACA2006D5150 /* Sede+CoreDataProperties.swift in Sources */,
+				CEA368361C4E90CC00EBA761 /* TipoActividadDO.swift in Sources */,
+				CEDA67641C0F37B400A90EFC /* LoguinViewController.swift in Sources */,
+				CE9D658A1C48A6FB000162E5 /* Asignatura+CoreDataProperties.swift in Sources */,
+				CE9D65861C48A6FB000162E5 /* Profesor+CoreDataProperties.swift in Sources */,
+				CE9D65891C48A6FB000162E5 /* Grupo.swift in Sources */,
+				CE9D65911C48A6FB000162E5 /* Area.swift in Sources */,
+				CE9D657E1C48A6FB000162E5 /* Bloque.swift in Sources */,
+				CE9D65801C48A6FB000162E5 /* Planilla.swift in Sources */,
+				CEDA67361C0F318700A90EFC /* AppDelegate.swift in Sources */,
+				CEA3682C1C4E8BD300EBA761 /* BloqueDO.swift in Sources */,
+				CE9D65851C48A6FB000162E5 /* Recurso.swift in Sources */,
+				CE9D65811C48A6FB000162E5 /* Programa+CoreDataProperties.swift in Sources */,
+				CE9D658C1C48A6FB000162E5 /* TipoActividad+CoreDataProperties.swift in Sources */,
+				CEDA67861C0F86A700A90EFC /* ReservaViewController.swift in Sources */,
+				CEAD7DA11C331629009BD8B4 /* ListadoReservaTableViewController.swift in Sources */,
+				CEA3682E1C4E8CCF00EBA761 /* AreaDO.swift in Sources */,
+				CEB131661C57C24400B56603 /* ConsultaReservaDO.swift in Sources */,
+				CE9D65871C48A6FB000162E5 /* Profesor.swift in Sources */,
+				CEA368341C4E903200EBA761 /* GrupoDO.swift in Sources */,
+				CE9727DB1C529AFD009F0952 /* Util.swift in Sources */,
+				CE9D658E1C48A6FB000162E5 /* Reserva+CoreDataProperties.swift in Sources */,
+				CE9D65941C48A849000162E5 /* JSONParserViewController.swift in Sources */,
+				CEC9F14D1C5FB83F006D4AAC /* Pensum.swift in Sources */,
+				CEA3682A1C4E8A7A00EBA761 /* SedeDO.swift in Sources */,
+				CEA368321C4E8ED400EBA761 /* AsignaturaDO.swift in Sources */,
+				CE7FBCB71C513DA300828622 /* PensumDO.swift in Sources */,
+				CEA368381C4E91D100EBA761 /* RecursoDO.swift in Sources */,
+				CE9D65901C48A6FB000162E5 /* Area+CoreDataProperties.swift in Sources */,
+				CE9D657D1C48A6FB000162E5 /* Bloque+CoreDataProperties.swift in Sources */,
+				CE9D65821C48A6FB000162E5 /* Programa.swift in Sources */,
+				CE9D657F1C48A6FB000162E5 /* Planilla+CoreDataProperties.swift in Sources */,
+				CE9C11B21C72A71F0062C111 /* ConsultaReservaEstudianteDO.swift in Sources */,
+				CE01BE8F1C5724DA00680471 /* ConsultaReservaTableViewController.swift in Sources */,
+				CEC9F14C1C5FB83F006D4AAC /* Pensum+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDA67421C0F318800A90EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDA674B1C0F318800A90EFC /* AppiReservaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDA674D1C0F318800A90EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDA67561C0F318800A90EFC /* AppiReservaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEDA67481C0F318800A90EFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEDA67311C0F318700A90EFC /* AppiReserva */;
+			targetProxy = CEDA67471C0F318800A90EFC /* PBXContainerItemProxy */;
+		};
+		CEDA67531C0F318800A90EFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEDA67311C0F318700A90EFC /* AppiReserva */;
+			targetProxy = CEDA67521C0F318800A90EFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEDA673E1C0F318700A90EFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDA673F1C0F318700A90EFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEDA67581C0F318800A90EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEDA67591C0F318800A90EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEDA675B1C0F318800A90EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AppiReserva/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Olonte.AppiReserva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEDA675C1C0F318800A90EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AppiReserva/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Olonte.AppiReserva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CEDA675E1C0F318800A90EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AppiReservaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Olonte.AppiReservaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppiReserva.app/AppiReserva";
+			};
+			name = Debug;
+		};
+		CEDA675F1C0F318800A90EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AppiReservaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Olonte.AppiReservaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppiReserva.app/AppiReserva";
+			};
+			name = Release;
+		};
+		CEDA67611C0F318800A90EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AppiReservaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Olonte.AppiReservaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AppiReserva;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CEDA67621C0F318800A90EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AppiReservaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Olonte.AppiReservaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AppiReserva;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEDA672D1C0F318700A90EFC /* Build configuration list for PBXProject "AppiReserva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDA67581C0F318800A90EFC /* Debug */,
+				CEDA67591C0F318800A90EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDA675A1C0F318800A90EFC /* Build configuration list for PBXNativeTarget "AppiReserva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDA675B1C0F318800A90EFC /* Debug */,
+				CEDA675C1C0F318800A90EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDA675D1C0F318800A90EFC /* Build configuration list for PBXNativeTarget "AppiReservaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDA675E1C0F318800A90EFC /* Debug */,
+				CEDA675F1C0F318800A90EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDA67601C0F318800A90EFC /* Build configuration list for PBXNativeTarget "AppiReservaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDA67611C0F318800A90EFC /* Debug */,
+				CEDA67621C0F318800A90EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE9D65651C48A0A8000162E5 /* AppiReserva.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE9D65661C48A0A8000162E5 /* AppiReserva.xcdatamodel */,
+			);
+			currentVersion = CE9D65661C48A0A8000162E5 /* AppiReserva.xcdatamodel */;
+			path = AppiReserva.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEDA672A1C0F318700A90EFC /* Project object */;
+}
